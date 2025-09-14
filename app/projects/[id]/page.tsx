@@ -18,7 +18,7 @@ export default function ProjectDetail() {
       .then(response => response.json())
       .then(data => {
         setData(data)
-        const foundProject = data.projects.find(p => p.id === params.id)
+        const foundProject = data.projects.find((p: any) => p.id === params.id)
         if (!foundProject) {
           notFound()
         }
