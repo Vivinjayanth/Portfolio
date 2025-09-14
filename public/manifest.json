@@ -1,0 +1,40 @@
+{
+  "name": "Vivin Jayanth A M - Portfolio",
+  "short_name": "Vivin Portfolio",
+  "description": "AI & ML engineering student portfolio showcasing projects in computer vision, machine learning, and cloud technologies",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/avatar.jpg",
+      "sizes": "400x400",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["portfolio", "technology", "education"],
+  "lang": "en",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/assets/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/assets/screenshot-mobile.png", 
+      "sizes": "375x812",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}

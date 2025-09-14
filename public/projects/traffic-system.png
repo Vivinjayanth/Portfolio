@@ -1,0 +1,48 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="50%" r="30%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#F97316;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#10B981;stop-opacity:0.4" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <rect x="300" y="200" width="200" height="200" fill="#374151" stroke="#6B7280" stroke-width="2" rx="10"/>
+  <text x="400" y="315" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#9CA3AF">Traffic Junction</text>
+  
+  <circle cx="400" cy="120" r="20" fill="url(#light)"/>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#10B981">AI System</text>
+  
+  <rect x="100" y="280" width="80" height="40" fill="#3B82F6" rx="5"/>
+  <text x="140" y="305" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">CCTV 1</text>
+  
+  <rect x="620" y="280" width="80" height="40" fill="#3B82F6" rx="5"/>
+  <text x="660" y="305" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">CCTV 2</text>
+  
+  <path d="M 180 300 L 300 300" stroke="#10B981" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 500 300 L 620 300" stroke="#10B981" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <rect x="350" y="480" width="100" height="30" fill="#8B5CF6" rx="5"/>
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Control Center</text>
+  
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#F3F4F6">AI Traffic Management</text>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10B981" />
+    </marker>
+  </defs>
+  
+  <rect x="50" y="450" width="150" height="100" fill="#1F2937" stroke="#374151" stroke-width="1" rx="5"/>
+  <text x="125" y="475" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#F3F4F6">YOLOv8 Detection</text>
+  <text x="70" y="495" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">• Vehicle Count: 24</text>
+  <text x="70" y="510" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">• Pedestrians: 7</text>
+  <text x="70" y="525" font-family="Arial, sans-serif" font-size="10" fill="#9CA3AF">• Emergency: 1</text>
+  <text x="70" y="540" font-family="Arial, sans-serif" font-size="10" fill="#10B981">• Accuracy: 94.2%</text>
+</svg>

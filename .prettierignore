@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Next.js
+.next/
+out/
+
+# Production
+build/
+dist/
+
+# Misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment files
+.env*
+
+# Package manager
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Static files
+public/
+
+# Archives
+*.tar.gz
+*.zip
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Temporary
+*.tmp
+*.temp
+
+# Documentation
+docs/generated/
+*.md

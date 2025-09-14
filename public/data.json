@@ -1,0 +1,118 @@
+{
+  "profile": {
+    "fullName": "Vivin Jayanth A M",
+    "headline": "Final Year AI & ML Engineering Student | Cloud & Data-Driven Systems",
+    "location": "Bengaluru, India",
+    "email": "vivinjayantham@gmail.com",
+    "phone": "+91 8147943631",
+    "shortBio": "AI & ML engineering student skilled in Python, cloud platforms (AWS, GCP), and building real-world ML solutions. Passionate about scalable, data-driven systems and impactful innovation.",
+    "avatar": "/assets/avatar.png",
+    "resumeFile": "/resume.pdf",
+    "social": {
+      "github": "https://github.com/Vivinjayanth",
+      "linkedin": "https://www.linkedin.com/in/vivin-jayanth-a-m"
+    },
+    "skills": [
+      "Python",
+      "C",
+      "Java",
+      "C++",
+      "R",
+      "AWS",
+      "Google Cloud",
+      "SQL",
+      "MySQL",
+      "MongoDB",
+      "Tableau",
+      "Power BI",
+      "Agile",
+      "Team Collaboration"
+    ]
+  },
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "AI-Driven Traffic Congestion Management",
+      "type": "Computer Vision & Multi-Agent Systems",
+      "summary": "AI-driven system for dynamic traffic flow optimization, emergency vehicle priority, and smart pedestrian crossing using real-time CCTV-based detection.",
+      "tech": ["YOLOv8", "OpenCV", "Python", "Flask"],
+      "image": "/projects/traffic-system.png",
+      "repo": "https://github.com/Vivinjayanth/traffic-management"
+    },
+    {
+      "id": "proj-2",
+      "title": "Frugal Foodie: Cost-Based Restaurant Clustering",
+      "type": "Machine Learning & Recommendation",
+      "summary": "Developed a K-Means clustering system with Google Maps API for location-based, cost-efficient restaurant recommendations. Achieved Silhouette Score of 0.6. Published in JETIR.",
+      "tech": ["Python", "K-Means", "Google Maps API"],
+      "image": "/projects/frugal-foodie.png",
+      "repo": "http://www.jetir.org/papers/JETIR2505064.pdf"
+    },
+    {
+      "id": "proj-3",
+      "title": "AI for Pandemic Prediction",
+      "type": "Predictive Modeling",
+      "summary": "Linear regression model using COVID-19 data across 150+ countries, with a Streamlit dashboard for real-time risk prediction and visualization.",
+      "tech": ["Python", "Pandas", "Streamlit"],
+      "image": "/projects/pandemic-prediction.png"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.E. Artificial Intelligence & Machine Learning",
+      "institute": "Jyothy Institute of Technology, VTU",
+      "year": "2026*",
+      "details": "Aggregate: 84%. Relevant coursework: ML, CV, Cloud Computing."
+    },
+    {
+      "degree": "Pre-University (PUC)",
+      "institute": "Sri Chaitanya PU College",
+      "year": "2022",
+      "details": "Aggregate: 73%"
+    },
+    {
+      "degree": "School",
+      "institute": "Siddaganga Public School",
+      "year": "2020",
+      "details": "Aggregate: 80%"
+    }
+  ],
+  "certifications": [
+    {"title": "AWS Academy Machine Learning Foundations", "issuer": "AWS", "year": "2024"},
+    {"title": "AWS Academy Cloud Foundations", "issuer": "AWS", "year": "2024"},
+    {"title": "Google Cloud Computing Foundations Certificate", "issuer": "Google", "year": "2024"},
+    {"title": "Strategy Formulation and Data Visualization", "issuer": "IIT Madras", "year": "2024"},
+    {"title": "Introduction to Generative AI", "issuer": "Google Cloud Skills Boost", "year": "2024"},
+    {"title": "Career Essentials in Generative AI", "issuer": "Microsoft & LinkedIn", "year": "2024"},
+    {"title": "Data Visualization: Empowering Business with Insights", "issuer": "Tata & Forage", "year": "2024"}
+  ],
+  "publications": [
+    {
+      "title": "Frugal Foodie: A Cost-Based Restaurant Clustering",
+      "publisher": "Journal of Emerging Technologies and Innovative Research (JETIR)",
+      "date": "May 2025",
+      "link": "http://www.jetir.org/papers/JETIR2505064.pdf"
+    },
+    {
+      "title": "Conference Presentation",
+      "publisher": "11th National Conference on Advancements in Information Technology (NCAIT), JSSATE Bengaluru",
+      "date": "May 2025"
+    }
+  ],
+  "extracurriculars": [
+    {
+      "role": "Layout & Color Designer",
+      "activity": "JITIMES College Magazine",
+      "details": "Responsible for layout and color schemes to improve visual appeal and readability."
+    },
+    {
+      "role": "Space Settlement Contest Winner",
+      "activity": "NSS Space Settlement Contest",
+      "details": "Secured 2nd place in an international competition designing futuristic space habitats."
+    }
+  ],
+  "contact": {
+    "email": "vivinjayantham@gmail.com",
+    "messageRecipient": "vivinjayantham@gmail.com"
+  }
+}

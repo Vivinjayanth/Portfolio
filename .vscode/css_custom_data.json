@@ -1,0 +1,28 @@
+{
+  "version": 1.1,
+  "properties": [],
+  "atDirectives": [
+    {
+      "name": "@tailwind",
+      "description": "Tailwind CSS directive to inject base, components, or utilities styles"
+    },
+    {
+      "name": "@apply",
+      "description": "Apply existing utility classes inline"
+    },
+    {
+      "name": "@layer",
+      "description": "Define which layer a set of custom styles belong to"
+    },
+    {
+      "name": "@responsive",
+      "description": "Generate responsive variants of utilities"
+    },
+    {
+      "name": "@screen",
+      "description": "Create media queries that reference your breakpoints by name"
+    }
+  ],
+  "pseudoClasses": [],
+  "pseudoElements": []
+}

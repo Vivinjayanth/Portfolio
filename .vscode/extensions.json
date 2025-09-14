@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-next",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-json",
+    "bradgashler.htmltagwrap",
+    "ms-playwright.playwright",
+    "orta.vscode-jest",
+    "github.vscode-github-actions",
+    "ms-vscode.vscode-yaml",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    "redhat.vscode-xml",
+    "humao.rest-client"
+  ]
+}

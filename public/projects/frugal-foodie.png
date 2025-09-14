@@ -1,0 +1,76 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#064E3B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#022C22;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="cluster1" cx="30%" cy="30%" r="20%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:0.3" />
+    </radialGradient>
+    <radialGradient id="cluster2" cx="70%" cy="40%" r="25%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:0.3" />
+    </radialGradient>
+    <radialGradient id="cluster3" cx="50%" cy="70%" r="20%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#10B981">Frugal Foodie</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#6EE7B7">Cost-Based Restaurant Clustering</text>
+  
+  <circle cx="240" cy="180" r="60" fill="url(#cluster1)"/>
+  <text x="240" y="185" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Budget</text>
+  <text x="240" y="200" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">₹100-300</text>
+  
+  <circle cx="560" cy="240" r="80" fill="url(#cluster2)"/>
+  <text x="560" y="245" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Mid-Range</text>
+  <text x="560" y="260" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">₹300-600</text>
+  
+  <circle cx="400" cy="420" r="70" fill="url(#cluster3)"/>
+  <text x="400" y="425" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Premium</text>
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">₹600+</text>
+  
+  <circle cx="220" cy="160" r="4" fill="#FFFFFF"/>
+  <circle cx="250" cy="170" r="4" fill="#FFFFFF"/>
+  <circle cx="260" cy="200" r="4" fill="#FFFFFF"/>
+  <circle cx="210" cy="190" r="4" fill="#FFFFFF"/>
+  <circle cx="240" cy="210" r="4" fill="#FFFFFF"/>
+  
+  <circle cx="540" cy="220" r="4" fill="#FFFFFF"/>
+  <circle cx="580" cy="230" r="4" fill="#FFFFFF"/>
+  <circle cx="560" cy="260" r="4" fill="#FFFFFF"/>
+  <circle cx="520" cy="250" r="4" fill="#FFFFFF"/>
+  <circle cx="590" cy="210" r="4" fill="#FFFFFF"/>
+  <circle cx="570" cy="280" r="4" fill="#FFFFFF"/>
+  
+  <circle cx="380" cy="400" r="4" fill="#FFFFFF"/>
+  <circle cx="420" cy="410" r="4" fill="#FFFFFF"/>
+  <circle cx="410" cy="440" r="4" fill="#FFFFFF"/>
+  <circle cx="390" cy="430" r="4" fill="#FFFFFF"/>
+  <circle cx="370" cy="420" r="4" fill="#FFFFFF"/>
+  
+  <rect x="50" y="450" width="200" height="120" fill="#1F2937" stroke="#374151" stroke-width="2" rx="10"/>
+  <text x="150" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#10B981">K-Means Results</text>
+  <text x="70" y="495" font-family="Arial, sans-serif" font-size="12" fill="#9CA3AF">• Clusters: 3</text>
+  <text x="70" y="510" font-family="Arial, sans-serif" font-size="12" fill="#9CA3AF">• Restaurants: 150+</text>
+  <text x="70" y="525" font-family="Arial, sans-serif" font-size="12" fill="#9CA3AF">• Silhouette Score: 0.6</text>
+  <text x="70" y="540" font-family="Arial, sans-serif" font-size="12" fill="#10B981">• Accuracy: 87%</text>
+  <text x="70" y="555" font-family="Arial, sans-serif" font-size="12" fill="#3B82F6">• Google Maps API</text>
+  
+  <rect x="550" y="450" width="200" height="120" fill="#1F2937" stroke="#374151" stroke-width="2" rx="10"/>
+  <text x="650" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#F59E0B">Location Features</text>
+  <text x="570" y="495" font-family="Arial, sans-serif" font-size="12" fill="#9CA3AF">• Distance-based</text>
+  <text x="570" y="510" font-family="Arial, sans-serif" font-size="12" fill="#9CA3AF">• Cost optimization</text>
+  <text x="570" y="525" font-family="Arial, sans-serif" font-size="12" fill="#9CA3AF">• Real-time data</text>
+  <text x="570" y="540" font-family="Arial, sans-serif" font-size="12" fill="#10B981">• Smart recommendations</text>
+  <text x="570" y="555" font-family="Arial, sans-serif" font-size="12" fill="#8B5CF6">• Published in JETIR</text>
+  
+  <line x1="300" y1="180" x2="480" y2="240" stroke="#6B7280" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="240" y1="240" x2="400" y2="350" stroke="#6B7280" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="480" y1="240" x2="400" y2="350" stroke="#6B7280" stroke-width="1" stroke-dasharray="5,5"/>
+</svg>

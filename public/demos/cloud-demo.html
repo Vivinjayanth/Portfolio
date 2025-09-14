@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Demo - Vivin Jayanth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-blue-400 mb-4">Cloud Computing Demo</h1>
+            <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+                Interactive demonstration of cloud services integration with AWS and Google Cloud Platform
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div class="bg-gray-800 rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-300">
+                    <i class="fab fa-aws mr-2"></i>AWS Services
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between bg-gray-700 p-3 rounded">
+                        <span>EC2 Instance</span>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                            <span class="text-green-400">Active</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-gray-700 p-3 rounded">
+                        <span>S3 Bucket</span>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                            <span class="text-green-400">Connected</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-gray-700 p-3 rounded">
+                        <span>Lambda Functions</span>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+                            <span class="text-yellow-400">Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-300">
+                    <i class="fab fa-google mr-2"></i>Google Cloud
+                </h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between bg-gray-700 p-3 rounded">
+                        <span>Compute Engine</span>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                            <span class="text-green-400">Running</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-gray-700 p-3 rounded">
+                        <span>Cloud Storage</span>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                            <span class="text-green-400">Synced</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between bg-gray-700 p-3 rounded">
+                        <span>BigQuery</span>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
+                            <span class="text-blue-400">Ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-purple-300">
+                <i class="fas fa-chart-line mr-2"></i>Real-time Metrics
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <div class="text-3xl font-bold text-green-400 mb-2">99.9%</div>
+                    <div class="text-gray-300">Uptime</div>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <div class="text-3xl font-bold text-blue-400 mb-2">2.3ms</div>
+                    <div class="text-gray-300">Latency</div>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <div class="text-3xl font-bold text-purple-400 mb-2">1.2TB</div>
+                    <div class="text-gray-300">Data Processed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6">
+            <h2 class="text-2xl font-semibold mb-4 text-yellow-300">
+                <i class="fas fa-code mr-2"></i>API Endpoints
+            </h2>
+            <div class="space-y-3">
+                <div class="flex items-center justify-between bg-gray-700 p-3 rounded font-mono text-sm">
+                    <span>GET /api/data</span>
+                    <button class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-xs transition-colors">
+                        Test
+                    </button>
+                </div>
+                <div class="flex items-center justify-between bg-gray-700 p-3 rounded font-mono text-sm">
+                    <span>POST /api/process</span>
+                    <button class="bg-green-600 hover:bg-green-700 px-3 py-1 rounded text-xs transition-colors">
+                        Execute
+                    </button>
+                </div>
+                <div class="flex items-center justify-between bg-gray-700 p-3 rounded font-mono text-sm">
+                    <span>DELETE /api/cleanup</span>
+                    <button class="bg-red-600 hover:bg-red-700 px-3 py-1 rounded text-xs transition-colors">
+                        Run
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <p class="text-gray-400 mb-4">This is a demonstration interface showcasing cloud infrastructure management</p>
+            <a href="/" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </div>
+
+    <script>
+        setInterval(() => {
+            const metrics = document.querySelectorAll('[data-metric]');
+            metrics.forEach(metric => {
+                const current = parseFloat(metric.textContent);
+                const variation = (Math.random() - 0.5) * 0.1;
+                const newValue = Math.max(0, current + variation);
+                metric.textContent = newValue.toFixed(1) + (metric.dataset.unit || '');
+            });
+        }, 3000);
+    </script>
+</body>
+</html>

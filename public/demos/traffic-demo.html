@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Traffic Management Demo - Vivin Jayanth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-red-400 mb-4">AI Traffic Management System</h1>
+            <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+                Real-time traffic flow optimization using YOLOv8 computer vision and multi-agent systems
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+            <div class="bg-gray-800 rounded-lg p-6">
+                <h2 class="text-xl font-semibold mb-4 text-green-300">
+                    <i class="fas fa-video mr-2"></i>Live Camera Feed
+                </h2>
+                <div class="aspect-video bg-black rounded-lg flex items-center justify-center mb-4">
+                    <div class="text-center">
+                        <i class="fas fa-camera text-4xl text-gray-600 mb-2"></i>
+                        <p class="text-gray-400">Camera Feed Simulation</p>
+                        <div class="w-2 h-2 bg-red-500 rounded-full mx-auto mt-2 animate-pulse"></div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                    <span>Status: <span class="text-green-400">Active</span></span>
+                    <span>FPS: <span class="text-blue-400">30</span></span>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg p-6">
+                <h2 class="text-xl font-semibold mb-4 text-blue-300">
+                    <i class="fas fa-brain mr-2"></i>AI Detection
+                </h2>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between bg-gray-700 p-3 rounded">
+                        <div class="flex items-center">
+                            <i class="fas fa-car text-blue-400 mr-2"></i>
+                            <span>Vehicles</span>
+                        </div>
+                        <span class="text-green-400 font-bold">24</span>
+                    </div>
+                    <div class="flex items-center justify-between bg-gray-700 p-3 rounded">
+                        <div class="flex items-center">
+                            <i class="fas fa-walking text-yellow-400 mr-2"></i>
+                            <span>Pedestrians</span>
+                        </div>
+                        <span class="text-green-400 font-bold">7</span>
+                    </div>
+                    <div class="flex items-center justify-between bg-gray-700 p-3 rounded">
+                        <div class="flex items-center">
+                            <i class="fas fa-ambulance text-red-400 mr-2"></i>
+                            <span>Emergency</span>
+                        </div>
+                        <span class="text-red-400 font-bold">1</span>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <span class="text-xs text-gray-400">YOLOv8 Confidence: </span>
+                    <span class="text-green-400 font-bold">94.2%</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg p-6">
+                <h2 class="text-xl font-semibold mb-4 text-purple-300">
+                    <i class="fas fa-traffic-light mr-2"></i>Signal Control
+                </h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-green-500 rounded-full animate-pulse"></div>
+                        </div>
+                        <p class="text-sm">North-South</p>
+                        <p class="text-xs text-green-400">GO - 45s</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <div class="w-8 h-8 bg-red-500 rounded-full"></div>
+                        </div>
+                        <p class="text-sm">East-West</p>
+                        <p class="text-xs text-red-400">STOP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <div class="bg-gray-800 rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4 text-orange-300">
+                    <i class="fas fa-chart-bar mr-2"></i>Traffic Analytics
+                </h2>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm">Traffic Density</span>
+                            <span class="text-sm text-orange-400">68%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-orange-500 h-2 rounded-full" style="width: 68%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm">Average Speed</span>
+                            <span class="text-sm text-blue-400">32 km/h</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 53%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm">Wait Time</span>
+                            <span class="text-sm text-green-400">2.1 min</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-green-500 h-2 rounded-full" style="width: 35%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4 text-red-300">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>Emergency Protocol
+                </h2>
+                <div class="bg-red-900/30 border border-red-600 rounded-lg p-4 mb-4">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-ambulance text-red-400 mr-2"></i>
+                        <span class="font-semibold text-red-300">Emergency Vehicle Detected</span>
+                    </div>
+                    <p class="text-sm text-red-200">Ambulance approaching from North direction</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-check text-green-400 mr-2"></i>
+                        <span>Clear north-south corridor</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-clock text-yellow-400 mr-2"></i>
+                        <span>Hold cross traffic for 30s</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-broadcast-tower text-blue-400 mr-2"></i>
+                        <span>Alert downstream intersections</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-cyan-300">
+                <i class="fas fa-network-wired mr-2"></i>System Architecture
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fas fa-camera text-green-400 text-2xl mb-2"></i>
+                    <h3 class="font-semibold mb-1">CCTV Input</h3>
+                    <p class="text-xs text-gray-400">Real-time video feeds</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fas fa-eye text-blue-400 text-2xl mb-2"></i>
+                    <h3 class="font-semibold mb-1">YOLOv8 Detection</h3>
+                    <p class="text-xs text-gray-400">Object recognition</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fas fa-brain text-purple-400 text-2xl mb-2"></i>
+                    <h3 class="font-semibold mb-1">Multi-Agent AI</h3>
+                    <p class="text-xs text-gray-400">Decision making</p>
+                </div>
+                <div class="text-center bg-gray-700 p-4 rounded">
+                    <i class="fas fa-traffic-light text-red-400 text-2xl mb-2"></i>
+                    <h3 class="font-semibold mb-1">Signal Control</h3>
+                    <p class="text-xs text-gray-400">Optimized timing</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <p class="text-gray-400 mb-4">
+                This demo showcases AI-driven traffic management with real-time optimization capabilities
+            </p>
+            <a href="/" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let vehicleCount = 24;
+        let pedestrianCount = 7;
+        
+        setInterval(() => {
+            vehicleCount = Math.max(0, vehicleCount + Math.floor(Math.random() * 6) - 2);
+            pedestrianCount = Math.max(0, pedestrianCount + Math.floor(Math.random() * 4) - 1);
+            
+            document.querySelector('.fa-car').parentElement.parentElement.querySelector('.font-bold').textContent = vehicleCount;
+            document.querySelector('.fa-walking').parentElement.parentElement.querySelector('.font-bold').textContent = pedestrianCount;
+        }, 2000);
+    </script>
+</body>
+</html>
