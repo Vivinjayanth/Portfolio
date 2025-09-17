@@ -3,16 +3,30 @@ export default function ModelCard({ item, type }) {
   const isCertification = type === 'certification'
   
   return (
-    <div className="group bg-gray-800/30 backdrop-blur-sm rounded-lg p-6 border border-gray-700 hover:border-gray-500 transition-all duration-300 hover:shadow-lg transform hover:scale-105">
+    <div className="group backdrop-blur-sm rounded-lg p-6 border transition-all duration-300 hover:shadow-lg transform hover:scale-105" style={{
+      backgroundColor: 'var(--card-bg)',
+      borderColor: 'var(--card-border)'
+    }} onMouseEnter={(e) => {
+      e.currentTarget.style.borderColor = 'var(--card-hover-border)'
+    }} onMouseLeave={(e) => {
+      e.currentTarget.style.borderColor = 'var(--card-border)'
+    }}>
       <div className="flex items-start justify-between mb-4">
         <div className="flex-1">
-          <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
+          <h3 className="text-lg font-semibold mb-2 transition-colors duration-300" style={{
+            color: 'rgb(var(--text-primary))'
+          }} onMouseEnter={(e) => {
+            if (e.currentTarget.parentElement.parentElement.parentElement.classList.contains('group'))
+              e.currentTarget.style.color = 'rgb(var(--accent-color))'
+          }} onMouseLeave={(e) => {
+            e.currentTarget.style.color = 'rgb(var(--text-primary))'
+          }}>
             {isEducation ? item.degree : item.title}
           </h3>
-          <p className="text-blue-400 text-sm font-medium mb-1">
+          <p className="text-sm font-medium mb-1" style={{color: 'rgb(var(--accent-color))'}}>
             {isEducation ? item.institute : item.issuer}
           </p>
-          <p className="text-gray-400 text-sm">
+          <p className="text-sm" style={{color: 'rgb(var(--text-muted))'}}>
             {item.year}
           </p>
         </div>
@@ -37,7 +51,7 @@ export default function ModelCard({ item, type }) {
       </div>
       
       {item.details && (
-        <p className="text-gray-300 text-sm leading-relaxed mb-3">
+        <p className="text-sm leading-relaxed mb-3" style={{color: 'rgb(var(--text-secondary))'}}>
           {item.details}
         </p>
       )}
@@ -57,8 +71,8 @@ export default function ModelCard({ item, type }) {
       
       <div className="mt-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-          <span className="text-xs text-gray-400">
+          <div className="w-2 h-2 rounded-full animate-pulse" style={{backgroundColor: 'rgb(var(--accent-color))'}} />
+          <span className="text-xs" style={{color: 'rgb(var(--text-muted))'}}>
             {isEducation ? 'Academic' : 'Certified'}
           </span>
         </div>
@@ -68,7 +82,15 @@ export default function ModelCard({ item, type }) {
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-colors duration-200 group/link"
+            className="transition-colors duration-200 group/link"
+            style={{color: 'rgb(var(--text-muted))'}}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = 'rgb(var(--accent-color))'
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = 'rgb(var(--text-muted))'
+            }}
+            aria-label="View certificate"
           >
             <svg className="w-4 h-4 group-hover/link:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />

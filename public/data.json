@@ -1,11 +1,16 @@
 {
   "profile": {
     "fullName": "Vivin Jayanth A M",
-    "headline": "Final Year AI & ML Engineering Student | Cloud & Data-Driven Systems",
+    "headline": "AI & ML Engineering Student",
+    "animatedPhrases": [
+      "AI & ML Engineering Student",
+      "Data Scientist Enthusiast",
+      "Python Development"
+    ],
     "location": "Bengaluru, India",
     "email": "vivinjayantham@gmail.com",
     "phone": "+91 8147943631",
-    "shortBio": "AI & ML engineering student skilled in Python, cloud platforms (AWS, GCP), and building real-world ML solutions. Passionate about scalable, data-driven systems and impactful innovation.",
+    "shortBio": "AI & ML engineering student skilled in Python, AI, and building real-world ML solutions. Passionate about scalable, data-driven systems and impactful innovation.",
     "avatar": "/assets/avatar.png",
     "resumeFile": "/resume.pdf",
     "social": {
@@ -78,9 +83,9 @@
     }
   ],
   "certifications": [
-    {"title": "AWS Academy Machine Learning Foundations", "issuer": "AWS", "year": "2024"},
-    {"title": "AWS Academy Cloud Foundations", "issuer": "AWS", "year": "2024"},
-    {"title": "Google Cloud Computing Foundations Certificate", "issuer": "Google", "year": "2024"},
+    {"title": "AWS Academy Machine Learning Foundations", "issuer": "AWS", "year": "2024", "link": "https://www.credly.com/badges/e2cadf09-c567-44e8-b7b6-dfcfdf71db80/public_url"},
+    {"title": "AWS Academy Cloud Foundations", "issuer": "AWS", "year": "2024", "link": "https://www.credly.com/badges/19727ecd-5b5d-41ed-9f33-4aecf8b8d334/public_url"},
+    {"title": "Google Cloud Computing Foundations Certificate", "issuer": "Google", "year": "2024", "link": "https://www.credly.com/badges/0a13f527-ef0f-47aa-bb84-987f6c94c26f/public_url"},
     {"title": "Strategy Formulation and Data Visualization", "issuer": "IIT Madras", "year": "2024"},
     {"title": "Introduction to Generative AI", "issuer": "Google Cloud Skills Boost", "year": "2024"},
     {"title": "Career Essentials in Generative AI", "issuer": "Microsoft & LinkedIn", "year": "2024"},
